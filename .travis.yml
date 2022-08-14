@@ -9,6 +9,8 @@ before_script:
   - dotnet restore
 script:
     - dotnet build
+    - dotnet test ./test/Swagger.Documentation.ExceptionTest -c $CONFIGURATION -f net5.0
+    - dotnet test ./test/Swagger.Documentation.VersionTest -c $CONFIGURATION -f net5.0
     - dotnet test ./test/Swagger.Documentation.Test -c $CONFIGURATION -f net5.0
 after_success:
     - dotnet minicover instrument
