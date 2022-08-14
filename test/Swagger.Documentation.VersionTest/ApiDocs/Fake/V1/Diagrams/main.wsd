@@ -1,0 +1,8 @@
+@startuml
+    autonumber "<b>[00]"
+    Participant "this service" as S 
+    Participant "integration-service" as IS #f0f0f0
+
+    S [#red]-> IS
+    S <--[#red] IS
+@enduml

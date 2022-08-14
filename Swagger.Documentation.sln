@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F8025343-BDFB-429E-A143-E73A09C51B50}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{722A9F3A-65E6-4D71-95EA-4D242B78E107}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Swagger.Documentation", "src\Swagger.Documentation\Swagger.Documentation.csproj", "{6FC96219-71A2-4755-8671-E9D6C8E1CDD7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Swagger.Documentation.Test", "test\Swagger.Documentation.Test\Swagger.Documentation.Test.csproj", "{1DD26821-68C9-4B01-9E57-CCEB54B2397F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "items", "items", "{DE00FEDE-BC74-4876-8F2E-EC7D26EBE602}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		.travis.yml = .travis.yml
+		example.png = example.png
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".config", ".config", "{FF4F3CAA-5EF4-42DD-AC2C-8732D74DBD0F}"
+	ProjectSection(SolutionItems) = preProject
+		.config\dotnet-tools.json = .config\dotnet-tools.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{12156B4A-40FB-4D1D-AD75-E507CB2AE558}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleSwaggerDocumentation", "samples\SampleSwaggerDocumentation\SampleSwaggerDocumentation.csproj", "{030EF24D-1150-451C-B0F3-816BC8CA2AB3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleSwaggerDocumentationVersion", "samples\SampleSwaggerDocumentationVersion\SampleSwaggerDocumentationVersion.csproj", "{AAD9BB32-C674-4741-977D-CBC3B35651CC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Swagger.Documentation.VersionTest", "test\Swagger.Documentation.VersionTest\Swagger.Documentation.VersionTest.csproj", "{C292E5E4-E56A-4366-BDCF-C9D8C1B9F8C4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Swagger.Documentation.ExceptionTest", "test\Swagger.Documentation.ExceptionTest\Swagger.Documentation.ExceptionTest.csproj", "{7008C0AB-95DB-43FC-90B6-8D766E4B007D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6FC96219-71A2-4755-8671-E9D6C8E1CDD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FC96219-71A2-4755-8671-E9D6C8E1CDD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FC96219-71A2-4755-8671-E9D6C8E1CDD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FC96219-71A2-4755-8671-E9D6C8E1CDD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DD26821-68C9-4B01-9E57-CCEB54B2397F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DD26821-68C9-4B01-9E57-CCEB54B2397F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DD26821-68C9-4B01-9E57-CCEB54B2397F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DD26821-68C9-4B01-9E57-CCEB54B2397F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{030EF24D-1150-451C-B0F3-816BC8CA2AB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{030EF24D-1150-451C-B0F3-816BC8CA2AB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{030EF24D-1150-451C-B0F3-816BC8CA2AB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{030EF24D-1150-451C-B0F3-816BC8CA2AB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAD9BB32-C674-4741-977D-CBC3B35651CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAD9BB32-C674-4741-977D-CBC3B35651CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAD9BB32-C674-4741-977D-CBC3B35651CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAD9BB32-C674-4741-977D-CBC3B35651CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C292E5E4-E56A-4366-BDCF-C9D8C1B9F8C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C292E5E4-E56A-4366-BDCF-C9D8C1B9F8C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C292E5E4-E56A-4366-BDCF-C9D8C1B9F8C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C292E5E4-E56A-4366-BDCF-C9D8C1B9F8C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7008C0AB-95DB-43FC-90B6-8D766E4B007D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7008C0AB-95DB-43FC-90B6-8D766E4B007D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7008C0AB-95DB-43FC-90B6-8D766E4B007D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7008C0AB-95DB-43FC-90B6-8D766E4B007D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6FC96219-71A2-4755-8671-E9D6C8E1CDD7} = {F8025343-BDFB-429E-A143-E73A09C51B50}
+		{1DD26821-68C9-4B01-9E57-CCEB54B2397F} = {722A9F3A-65E6-4D71-95EA-4D242B78E107}
+		{FF4F3CAA-5EF4-42DD-AC2C-8732D74DBD0F} = {DE00FEDE-BC74-4876-8F2E-EC7D26EBE602}
+		{030EF24D-1150-451C-B0F3-816BC8CA2AB3} = {12156B4A-40FB-4D1D-AD75-E507CB2AE558}
+		{AAD9BB32-C674-4741-977D-CBC3B35651CC} = {12156B4A-40FB-4D1D-AD75-E507CB2AE558}
+		{C292E5E4-E56A-4366-BDCF-C9D8C1B9F8C4} = {722A9F3A-65E6-4D71-95EA-4D242B78E107}
+		{7008C0AB-95DB-43FC-90B6-8D766E4B007D} = {722A9F3A-65E6-4D71-95EA-4D242B78E107}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {267B9DBE-00E4-4AED-8E9B-9A8CDFC062AB}
+	EndGlobalSection
+EndGlobal

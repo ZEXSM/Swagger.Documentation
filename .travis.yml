@@ -1,5 +1,5 @@
 language: csharp
-dotnet: 3.1
+dotnet: 5.0
 mono: none
 solution: Swagger.Documentation.sln
 branches:
@@ -9,11 +9,15 @@ before_script:
   - dotnet restore
 script:
     - dotnet build
-    - dotnet test ./test/Swagger.Documentation.Test -c $CONFIGURATION -f netcoreapp3.1
+    - dotnet test ./test/Swagger.Documentation.ExceptionTest -c $CONFIGURATION -f net5.0
+    - dotnet test ./test/Swagger.Documentation.VersionTest -c $CONFIGURATION -f net5.0
+    - dotnet test ./test/Swagger.Documentation.Test -c $CONFIGURATION -f net5.0
 after_success:
     - dotnet minicover instrument
     - dotnet minicover reset
-    - dotnet test --no-build ./test/Swagger.Documentation.Test -c $CONFIGURATION -f netcoreapp3.1
+    - dotnet test --no-build ./test/Swagger.Documentation.ExceptionTest -c $CONFIGURATION -f net5.0
+    - dotnet test --no-build ./test/Swagger.Documentation.VersionTest -c $CONFIGURATION -f net5.0
+    - dotnet test --no-build ./test/Swagger.Documentation.Test -c $CONFIGURATION -f net5.0
     - dotnet minicover uninstrument
     - dotnet minicover report
     - dotnet minicover coverallsreport --output "coveralls.json" --service-name "travis-ci" --service-job-id $TRAVIS_JOB_ID
