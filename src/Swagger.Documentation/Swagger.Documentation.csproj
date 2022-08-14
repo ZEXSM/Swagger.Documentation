@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<IsPackable>true</IsPackable>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<PackageId>Swagger.Documentation</PackageId>
+		<PackageVersion>$(PackageVersion)</PackageVersion>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+		<PackageProjectUrl>https://github.com/ZEXSM/Swagger.Documentation</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/ZEXSM/Swagger.Documentation</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>swagger;documentation;dotnet;charp</PackageTags>
+		<Authors>ZEXSM</Authors>
+		<Description>The library allows you to embed and render documentation from Markdown files.</Description>
+		<LangVersion>8.0</LangVersion>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.4.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.4.0" />
+		<PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="2.1.0" />
+		<PackageReference Include="Microsoft.Extensions.FileProviders.Physical" Version="2.1.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Include="SwaggerUI\*.css" />
+	</ItemGroup>
+
+	<Target Name="RestoreTools" BeforeTargets="Build">
+		<Exec Command="dotnet tool restore" />
+	</Target>
+
+</Project>
